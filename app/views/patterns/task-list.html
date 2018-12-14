@@ -1,0 +1,185 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list - Defra pattern library
+{% endblock %}
+{% block beforeContent %}
+<a href="javascript:history.back();" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Task list</h1>
+      <p>Help users know what they need to complete or provide within their application, whilst keeping track of what has already been completed, and costs established.</p>
+      <h3 class="govuk-heading-m">When to use this pattern</h3>
+      <p>This pattern should be used for a complex application process. This differs from the Design System pattern only by section headings, and the activities and cost details placed above the list.</p>
+     <p>We found users were skipping past the 'Before you start section' so renamed this section. This is still in test.</p>
+     <p>Due to the number of sections to our bespoke application process, we found that six sections to our task list made it easier to navigate.</p>
+     <p>Cost and activities summary above the task list, helped remind users of the cost and activities selected pre task list. Having a link to allow a change to the chosen activities at this section has tested okay so far.</p>
+     
+      <p>Styles for this patterns can be found in assets/sass/patterns.</p>
+<!-- COPY FOR PATTERN -->
+<!-- TASK LIST ############################################################ -->
+<!-- STARTS HERE ########################################################## -->
+<h1 class="govuk-heading-l">Apply for a bespoke environmental permit</h1>
+<p>
+  Biological treatment of waste - not composting</br>
+  Chemical treatment of waste</br>
+  Hazardous waste storage - temporary or in underground storage - section 5.6</br>
+  Odour management plan assessment</br>
+<strong>Total cost £27,718</strong></br>
+<a href="#">Change activities or assessments</a></p>
+
+<ol class="app-task-list">
+  <li>
+    <h2 class="app-task-list__section">
+      <span class="app-task-list__section-number">1. </span>Register
+    </h2>
+    <ul class="app-task-list__items">
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="commonfooter-status">
+          Register to return to this application
+        </a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="commonfooter-status">complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+          Task list
+        </a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+      </li>    </ul>
+      
+ <h2 class="app-task-list__section">
+        <span class="app-task-list__section-number">2. </span>About the application
+      </h2>
+      <ul class="app-task-list__items">
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+          Give contact details</a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+          Give permit holder details</a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+          Confirm confidentiality needs</a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+          Give invoicing details</a>
+        <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+      </li>
+    </ul>
+
+      <h2 class="app-task-list__section">
+        <span class="app-task-list__section-number">3. </span>Operations
+      </h2>
+      <ul class="app-task-list__items">
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Give basic details about the operation</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Provide a non-technical summary</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Confirm if you release to sewer, harbour or coastal waters</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Give site name and location</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Site condition report</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Upload the site plan</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+      </ul>
+
+      <h2 class="app-task-list__section">
+        <span class="app-task-list__section-number">4. </span>Activities
+      </h2>
+      <ul class="app-task-list__items">
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            List R and D codes for your activities</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            List European waste codes</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+      </ul>
+
+      <h2 class="app-task-list__section">
+        <span class="app-task-list__section-number">5. </span>Evidence
+      </h2>
+      <ul class="app-task-list__items">
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Prove technical competence</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Upload fire prevention plan</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Upload environmental risk assessment</a>
+          <strong class="govuk-tag app-task-list__task-completed defra-tag-complete" id="nextsteps-status">complete</strong>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Tell us about emissions and monitoring</a>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            Provide a management system summary</a>
+        </li>
+        <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            List the technical standards you use</a>
+        </li>
+      </ul>
+
+      <h2 class="app-task-list__section">
+        <span class="app-task-list__section-number">6. </span>Apply
+      </h2>
+      <ul class="app-task-list__items">
+      <li class="app-task-list__item">
+          <a class="app-task-list__task-name" href="#" aria-describedby="nextsteps-status">
+            <a class="app-task-list__task-name" href="patterns/next-steps" aria-describedby="nextsteps-status">
+            Send application and pay</a>
+      </li>
+
+    </ul>
+  </li>
+</ol>
+
+
+
+<!-- END -->
+    </div>
+</div>
+
+{% endblock %}
