@@ -13,4 +13,9 @@ $govuk-global-styles: true;
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
-// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// Defra Pattern Library-specific
+// Additional colour styles for task list pattern to show status of patterns
+@import "defra-tags";
+// Styles for each specific pattern
+@import "patterns/next-steps";

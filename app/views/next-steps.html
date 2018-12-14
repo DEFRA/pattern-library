@@ -1,0 +1,35 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Next Steps - Defra pattern library
+{% endblock %}
+{% block beforeContent %}
+<a href="javascript:history.back();" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Next steps boxout</h1>
+      <p>Help users know what to do next if there is no clear onward action, for example if you have sent them an email.</p>
+      <h3 class="govuk-heading-m">When to use this pattern</h3>
+      <p>Use this pattern when user research shows that users are unclear what they should be doing next. This commonly occurs when there is a break in the process, for example they need to go and get the docuemnts you told them they'd need in the 'before you start' section.</p>
+      <p>Styles for this patterns can be found in assets/sass/patterns.</p>
+<!-- COPY FOR PATTERN -->
+
+      <div class="defra-panel">
+        <h2 class="govuk-heading-m defra-panel__heading">Next steps</h2>
+          <ol class="defra-panel__body govuk-list govuk-list--number">
+          <li>Find the email with the subject "You requested access to renew your waste exemptions"</li>
+          <li>Open email and follow the instructions to sign in</li>
+          <li>If you cannot see an email from us, please check your Bulk/Spam folder</li>
+          <li>If you need us to re-send the email, see the "Need help?" area</li>
+        </ol>
+      </div>
+
+<!-- END -->
+    </div>
+</div>
+
+{% endblock %}
